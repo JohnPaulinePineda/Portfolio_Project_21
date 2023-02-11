@@ -431,7 +431,7 @@ featurePlotRange(1+28*243,6830)
 
 ###  1.5.1 Principal Component Analysis (PCA)
 |
-| **[A]** The principal component analysis algorithm was implemented only for descriptors using the <mark style="background-color: #CCECFF">**stats**</mark> package.  
+| **[A]** The PCA algorithm was implemented only for descriptors using the <mark style="background-color: #CCECFF">**stats**</mark> package.  
 |
 | **[B]** Combining the reduced dimensions defined by the <span style="color: #FF0000">PC1</span> and <span style="color: #FF0000">PC2</span> components provided a sufficient differential representation of the cancer types. 
 |
@@ -489,7 +489,7 @@ xyplot(PC1 ~ PC2,
 
 ###  1.5.2 Singular Value Decomposition (SVD)
 |
-| **[A]** The singular value decomposition algorithm was implemented only for descriptors using the <mark style="background-color: #CCECFF">**stats**</mark> package.  
+| **[A]** The SVD algorithm was implemented only for descriptors using the <mark style="background-color: #CCECFF">**stats**</mark> package.  
 |
 | **[B]** Combining the reduced dimensions defined by the <span style="color: #FF0000">SV1</span> and <span style="color: #FF0000">SV2</span> components provided a sufficient differential representation of the cancer types. 
 |
@@ -547,7 +547,7 @@ xyplot(V1 ~ V2,
 
 ###  1.5.3 Independent Component Analysis (ICA)
 |
-| **[A]** The independent component analysis algorithm was implemented only for descriptors using the <mark style="background-color: #CCECFF">**fastICA**</mark> package.  
+| **[A]** The ICA algorithm was implemented only for descriptors using the <mark style="background-color: #CCECFF">**fastICA**</mark> package.  
 |
 | **[B]** Combining the reduced dimensions defined by the <span style="color: #FF0000">IC1</span> and <span style="color: #FF0000">IC2</span> components provided a sufficient differential representation of the cancer types. 
 |
@@ -592,7 +592,7 @@ xyplot(V1 ~ V2,
 
 ###  1.5.4 Non-Negative Matrix Factorization (NMF)
 |
-| **[A]** The non-negative matrix factorization algorithm was implemented only for descriptors using the <mark style="background-color: #CCECFF">**NMF**</mark> package.  
+| **[A]** The NMF algorithm was implemented only for descriptors using the <mark style="background-color: #CCECFF">**NMF**</mark> package.  
 |
 | **[B]** Combining the reduced dimensions defined by the <span style="color: #FF0000">NMF1</span> and <span style="color: #FF0000">NMF2</span> components provided a sufficient differential representation of the cancer types. 
 |
@@ -647,7 +647,7 @@ xyplot(V1 ~ V2,
 
 ###  1.5.5 t-Distributed Stochastic Neighbor Embedding (tSNE)
 |
-| **[A]** The t-distributed stochastic neighbor embedding algorithm was implemented only for descriptors using the <mark style="background-color: #CCECFF">**Rtsne**</mark> package.  
+| **[A]** The tSNE algorithm was implemented only for descriptors using the <mark style="background-color: #CCECFF">**Rtsne**</mark> package.  
 |
 | **[B]** Combining the reduced dimensions defined by the <span style="color: #FF0000">tSNE1</span> and <span style="color: #FF0000">tSNE2</span> components provided a sufficient differential representation of the cancer types. 
 |
@@ -693,7 +693,7 @@ xyplot(V1 ~ V2,
 
 ###  1.5.6 Uniform Manifold Approximation and Projection (UMAP)
 |
-| **[A]** The t-distributed stochastic neighbor embedding algorithm was implemented only for descriptors using the <mark style="background-color: #CCECFF">**umap**</mark> package.  
+| **[A]** The UMAP algorithm was implemented only for descriptors using the <mark style="background-color: #CCECFF">**umap**</mark> package.  
 |
 | **[B]** Combining the reduced dimensions defined by the <span style="color: #FF0000">UMAP1</span> and <span style="color: #FF0000">UMAP2</span> components provided a sufficient differential representation of the cancer types. 
 |
