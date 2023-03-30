@@ -914,7 +914,7 @@ grid.arrange(PCA_Plot,
 | **[Publication]** [The Approximation of One Matrix by Another of Lower Rank](https://link.springer.com/article/10.1007/BF02288367) by Carl Eckart and Gale Young (Psychometrika) 
 | **[Publication]** [Independent Component Analysis: Algorithms and Applications](https://www.sciencedirect.com/science/article/abs/pii/S0893608000000265) by Aapo Hyvarinen and Erkki Oja (Neural Networks)
 | **[Publication]** [On the Approximation of a Function of Several Variables by the Sum of Functions of Fewer Variables](https://projecteuclid.org/journals/pacific-journal-of-mathematics/volume-1/issue-2/On-the-approximation-of-a-function-of-several-variables-by/pjm/1103052191.full) by Author (Pacific Journal of Mathematics)
-| **[Publication]** [Title](https://www.jkobject.com/blog/umap-explanation/) by Author
+| **[Publication]** [Visualizing Data using t-SNE](https://www.semanticscholar.org/paper/Visualizing-Data-using-t-SNE-Maaten-Hinton/1c46943103bd7b7a2c7be86859995a4144d1938b) by Laurens van der Maaten and Geoffrey Hinton (Journal of Machine Learning Research)
 | **[Publication]** [Title](https://www.jkobject.com/blog/umap-explanation/) by Author
 | **[Course]** [Applied Data Mining and Statistical Learning](https://online.stat.psu.edu/stat508/) by Penn State Eberly College of Science
 |
