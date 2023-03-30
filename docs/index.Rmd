@@ -909,7 +909,13 @@ grid.arrange(PCA_Plot,
 | **[Article]** [ML: T-distributed Stochastic Neighbor Embedding (t-SNE) Algorithm](https://www.geeksforgeeks.org/ml-t-distributed-stochastic-neighbor-embedding-t-sne-algorithm/) by Geeks For Geeks Team
 | **[Article]** [An illustrated introduction to the t-SNE algorithm](https://www.oreilly.com/content/an-illustrated-introduction-to-the-t-sne-algorithm/) by Cyrille Rossant
 | **[Article]** [Understanding UMAP](https://pair-code.github.io/understanding-umap/) by Andy Coenen and Adam Pearce
-| **[Article]** [UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction](https://www.jkobject.com/blog/umap-explanation/) by Jérémie Kalfon
+| **[Article]** [UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction](https://www.jkobject.com/blog/umap-explanation/) by Jeremie Kalfon
+| **[Publication]** [Analysis of a Complex of Statistical Variables into Principal Components](https://psycnet.apa.org/doiLanding?doi=10.1037%2Fh0071325) by Harold Hotelling (Journal of Educational Psychology)
+| **[Publication]** [Title](https://www.jkobject.com/blog/umap-explanation/) by Author
+| **[Publication]** [Title](https://www.jkobject.com/blog/umap-explanation/) by Author
+| **[Publication]** [Title](https://www.jkobject.com/blog/umap-explanation/) by Author
+| **[Publication]** [Title](https://www.jkobject.com/blog/umap-explanation/) by Author
+| **[Publication]** [Title](https://www.jkobject.com/blog/umap-explanation/) by Author
 | **[Course]** [Applied Data Mining and Statistical Learning](https://online.stat.psu.edu/stat508/) by Penn State Eberly College of Science
 |
 |
