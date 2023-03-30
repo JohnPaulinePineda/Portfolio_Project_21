@@ -911,9 +911,9 @@ grid.arrange(PCA_Plot,
 | **[Article]** [Understanding UMAP](https://pair-code.github.io/understanding-umap/) by Andy Coenen and Adam Pearce
 | **[Article]** [UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction](https://www.jkobject.com/blog/umap-explanation/) by Jeremie Kalfon
 | **[Publication]** [Analysis of a Complex of Statistical Variables into Principal Components](https://psycnet.apa.org/doiLanding?doi=10.1037%2Fh0071325) by Harold Hotelling (Journal of Educational Psychology)
-| **[Publication]** [The Approximation of One Matrix by Another of Lower Rank](https://link.springer.com/article/10.1007/BF02288367) by Carl Eckart and Gale Young 
-| **[Publication]** [Independent Component Analysis: Algorithms and Applications](https://www.sciencedirect.com/science/article/abs/pii/S0893608000000265) by Aapo Hyvarinen and Erkki Oja
-| **[Publication]** [Title](https://www.jkobject.com/blog/umap-explanation/) by Author
+| **[Publication]** [The Approximation of One Matrix by Another of Lower Rank](https://link.springer.com/article/10.1007/BF02288367) by Carl Eckart and Gale Young (Psychometrika) 
+| **[Publication]** [Independent Component Analysis: Algorithms and Applications](https://www.sciencedirect.com/science/article/abs/pii/S0893608000000265) by Aapo Hyvarinen and Erkki Oja (Neural Networks)
+| **[Publication]** [On the Approximation of a Function of Several Variables by the Sum of Functions of Fewer Variables](https://projecteuclid.org/journals/pacific-journal-of-mathematics/volume-1/issue-2/On-the-approximation-of-a-function-of-several-variables-by/pjm/1103052191.full) by Author (Pacific Journal of Mathematics)
 | **[Publication]** [Title](https://www.jkobject.com/blog/umap-explanation/) by Author
 | **[Publication]** [Title](https://www.jkobject.com/blog/umap-explanation/) by Author
 | **[Course]** [Applied Data Mining and Statistical Learning](https://online.stat.psu.edu/stat508/) by Penn State Eberly College of Science
