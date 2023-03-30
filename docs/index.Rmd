@@ -549,6 +549,15 @@ xyplot(V1 ~ V2,
 
 ###  1.5.3 Independent Component Analysis (ICA)
 |
+| [ICA](https://www.sciencedirect.com/science/article/abs/pii/S0893608000000265) decomposes multivariate data by creating a user-defined number of features where each feature is a linear combination of the original attribute set with the coefficients of these linear combinations being non-negative. The algorithm obtains lower rank factorized matrices W (feature matrix) and H (coefficient matrix) whose product approximates the original data set through an iterative procedure which modifies their initial values. The procedure terminates when the approximation error converges or the specified number of iterations is reached. The result represents the original data set mapped into the new set of attributes (features).
+
+Independent Component Analysis (ICA) is a statistical and computational technique used in machine learning to separate a multivariate signal into its independent non-Gaussian components. ICA assumes that the observed data is a linear combination of independent, non-Gaussian signals. The goal of ICA is to find a linear transformation of the data that results in a set of independent components.
+
+identifies a set of basis functions that can be used to represent the observed data set. These basis functions are chosen to be statistically independent and non-Gaussian. Once these basis functions are identified, they can be used to separate the observed data into its independent components.
+
+
+Despite these limitations, ICA remains a powerful and widely used technique in machine learning and signal processing
+|
 | **[A]** The ICA algorithm was implemented only for descriptors using the <mark style="background-color: #CCECFF">**fastICA**</mark> package.  
 |
 | **[B]** Combining the reduced dimensions defined by the <span style="color: #FF0000">IC1</span> and <span style="color: #FF0000">IC2</span> components provided a sufficient differential representation of the cancer types. 
@@ -918,7 +927,7 @@ grid.arrange(PCA_Plot,
 | **[Article]** [UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction](https://www.jkobject.com/blog/umap-explanation/) by Jeremie Kalfon
 | **[Publication]** [Analysis of a Complex of Statistical Variables into Principal Components](https://psycnet.apa.org/doiLanding?doi=10.1037%2Fh0071325) by Harold Hotelling (Journal of Educational Psychology)
 | **[Publication]** [The Approximation of One Matrix by Another of Lower Rank](https://link.springer.com/article/10.1007/BF02288367) by Carl Eckart and Gale Young (Psychometrika) 
-| **[Publication]** [Independent Component Analysis: Algorithms and Applications](https://www.sciencedirect.com/science/article/abs/pii/S0893608000000265) by Aapo Hyvarinen and Erkki Oja (Neural Networks)
+| **[Publication]** [Independent Component Analysis, A New Concept?](https://www.sciencedirect.com/science/article/abs/pii/0165168494900299) by Pierre Comon (Signal Processing)
 | **[Publication]** [On the Approximation of a Function of Several Variables by the Sum of Functions of Fewer Variables](https://projecteuclid.org/journals/pacific-journal-of-mathematics/volume-1/issue-2/On-the-approximation-of-a-function-of-several-variables-by/pjm/1103052191.full) by Author (Pacific Journal of Mathematics)
 | **[Publication]** [Visualizing Data using t-SNE](https://www.semanticscholar.org/paper/Visualizing-Data-using-t-SNE-Maaten-Hinton/1c46943103bd7b7a2c7be86859995a4144d1938b) by Laurens van der Maaten and Geoffrey Hinton (Journal of Machine Learning Research)
 | **[Publication]** [UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction](https://www.semanticscholar.org/paper/UMAP%3A-Uniform-Manifold-Approximation-and-Projection-McInnes-Healy/3a288c63576fc385910cb5bc44eaea75b442e62e) by Leland McInnes and John Healy (Computer Science)
