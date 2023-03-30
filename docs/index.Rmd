@@ -493,7 +493,7 @@ xyplot(PC1 ~ PC2,
 
 ###  1.5.2 Singular Value Decomposition (SVD)
 |
-| [SVD](https://link.springer.com/article/10.1007/BF02288367) factors the original data set (m x n matrix) into three component matrices factorized in the form USV where U, S and V correspond to an m x p matrix, a p x p diagonal matrix and a p x n matrix, respectively. The value p is called the rank. The diagonal entries of S are referred to as the singular values of M. The columns of U are typically called the left-singular vectors of M, and the columns of V are called the right-singular vectors of M. Given the decomposition into the U, S and V matrices, the algorithm is able to reconstruct the original data set or an approximation of it. The singular values in the diagonal matrix S provide the amount of variance explained by each of the singular vectors. This information is used to limit the number of vectors to the reduced amount of variance aimed to be captured. 
+| [SVD](https://link.springer.com/article/10.1007/BF02288367) decomposes the original data set (m x n matrix) into three component matrices factorized in the form USV where U, S and V correspond to an m x p matrix, a p x p diagonal matrix and a p x n matrix, respectively. The value p is called the rank. The diagonal entries of S are referred to as the singular values of M. The columns of U are typically called the left-singular vectors of M, and the columns of V are called the right-singular vectors of M. Given the decomposition into the U, S and V matrices, the algorithm is able to reconstruct the original data set or an approximation of it. The singular values in the diagonal matrix S provide the amount of variance explained by each of the singular vectors. This information is used to limit the number of vectors to the reduced amount of variance aimed to be captured. 
 |
 | **[A]** The SVD algorithm was implemented only for descriptors using the <mark style="background-color: #CCECFF">**stats**</mark> package.  
 |
@@ -553,7 +553,7 @@ xyplot(V1 ~ V2,
 
 ###  1.5.3 Independent Component Analysis (ICA)
 |
-| [ICA](https://www.sciencedirect.com/science/article/abs/pii/0165168494900299) identifies a set of basis functions that can be used to represent the original data set by searching for a linear transformation that minimizes the statistical dependence between its components. The identified basis functions which are chosen to be statistically independent and non-Gaussian are used to separate original data set into a set of independent components.
+| [ICA](https://www.sciencedirect.com/science/article/abs/pii/0165168494900299) identifies a set of basis functions that can be used to represent the original data set by searching for a linear transformation that minimizes the statistical dependence between its components. The identified basis functions which are chosen to be statistically independent and non-Gaussian are used to separate the original data into a set of independent components.
 |
 | **[A]** The ICA algorithm was implemented only for descriptors using the <mark style="background-color: #CCECFF">**fastICA**</mark> package.  
 |
@@ -907,7 +907,7 @@ grid.arrange(PCA_Plot,
 | **[Article]** [Singular Value Decomposition (SVD)](https://www.geeksforgeeks.org/singular-value-decomposition-svd/) by Geeks For Geeks
 | **[Article]** [Singular Value Decomposition as Simply as Possible](https://gregorygundersen.com/blog/2018/12/10/svd/) by Gregory Gundersen
 | **[Article]** [Singular Value Decomposition](https://datascience.eu/machine-learning/singular-value-decomposition/) by Data Science Team
-| **[Article]** [Singular Value Decomposition (SVD)](https://www.machinelearningmindset.com/singular-value-decomposition-svd/) by Maachine Learning Mindset Team
+| **[Article]** [Singular Value Decomposition (SVD)](https://www.machinelearningmindset.com/singular-value-decomposition-svd/) by Machine Learning Mindset Team
 | **[Article]** [Singular Value Decomposition](https://calvinfeng.gitbook.io/machine-learning-notebook/supervised-learning/recommender/singular_value_decomposition) by Calvin Feng
 | **[Article]** [Explained: Singular Value Decomposition (SVD)](https://storrs.io/svd/) by Erik Storrs
 | **[Article]** [Using SVD for Dimensionality Reduction](https://blogs.oracle.com/machinelearning/post/using-svd-for-dimensionality-reduction) by Mark Hornick
@@ -921,7 +921,7 @@ grid.arrange(PCA_Plot,
 | **[Article]** [t-SNE: T-Distributed Stochastic Neighbor Embedding Explained](https://learnopencv.com/t-sne-t-distributed-stochastic-neighbor-embedding-explained/) by Prakash Chandra
 | **[Article]** [What is tSNE?](https://sonraianalytics.com/what-is-tsne/) by Matt Lee
 | **[Article]** [ML: T-distributed Stochastic Neighbor Embedding (t-SNE) Algorithm](https://www.geeksforgeeks.org/ml-t-distributed-stochastic-neighbor-embedding-t-sne-algorithm/) by Geeks For Geeks Team
-| **[Article]** [An illustrated introduction to the t-SNE algorithm](https://www.oreilly.com/content/an-illustrated-introduction-to-the-t-sne-algorithm/) by Cyrille Rossant
+| **[Article]** [An Illustrated Introduction to the t-SNE algorithm](https://www.oreilly.com/content/an-illustrated-introduction-to-the-t-sne-algorithm/) by Cyrille Rossant
 | **[Article]** [Understanding UMAP](https://pair-code.github.io/understanding-umap/) by Andy Coenen and Adam Pearce
 | **[Article]** [UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction](https://www.jkobject.com/blog/umap-explanation/) by Jeremie Kalfon
 | **[Publication]** [Analysis of a Complex of Statistical Variables into Principal Components](https://psycnet.apa.org/doiLanding?doi=10.1037%2Fh0071325) by Harold Hotelling (Journal of Educational Psychology)
