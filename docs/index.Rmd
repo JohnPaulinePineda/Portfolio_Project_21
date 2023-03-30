@@ -695,6 +695,8 @@ xyplot(V1 ~ V2,
 
 ###  1.5.6 Uniform Manifold Approximation and Projection (UMAP)
 |
+| [UMAP](https://www.semanticscholar.org/paper/UMAP%3A-Uniform-Manifold-Approximation-and-Projection-McInnes-Healy/3a288c63576fc385910cb5bc44eaea75b442e62e) constructs a fuzzy topological representation and optimizes the low dimensional representation as measured by cross entropy. When constructing the initial fuzzy topological representation, fuzzy set membership strengths are only computed for the nearest neighbors of each point using the Nearest-Neighbor-Descent algorithm for efficiency. Optimizing the low dimensional embedding applies the stochastic gradient descent process using a differentiable objective function involving a smooth approximation of the actual membership strength function for the low dimensional representation, selecting from a suitably versatile family. Since the Laplacian of the topological representation is an approximation of the Laplace-Beltrami operator of the manifold, spectral embedding techniques are also used to initialize the low dimensional representation into a good state.
+|
 | **[A]** The UMAP algorithm was implemented only for descriptors using the <mark style="background-color: #CCECFF">**umap**</mark> package.  
 |
 | **[B]** Combining the reduced dimensions defined by the <span style="color: #FF0000">UMAP1</span> and <span style="color: #FF0000">UMAP2</span> components provided a sufficient differential representation of the cancer types. 
