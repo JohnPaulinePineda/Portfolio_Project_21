@@ -915,7 +915,7 @@ grid.arrange(PCA_Plot,
 | **[Publication]** [Independent Component Analysis: Algorithms and Applications](https://www.sciencedirect.com/science/article/abs/pii/S0893608000000265) by Aapo Hyvarinen and Erkki Oja (Neural Networks)
 | **[Publication]** [On the Approximation of a Function of Several Variables by the Sum of Functions of Fewer Variables](https://projecteuclid.org/journals/pacific-journal-of-mathematics/volume-1/issue-2/On-the-approximation-of-a-function-of-several-variables-by/pjm/1103052191.full) by Author (Pacific Journal of Mathematics)
 | **[Publication]** [Visualizing Data using t-SNE](https://www.semanticscholar.org/paper/Visualizing-Data-using-t-SNE-Maaten-Hinton/1c46943103bd7b7a2c7be86859995a4144d1938b) by Laurens van der Maaten and Geoffrey Hinton (Journal of Machine Learning Research)
-| **[Publication]** [Title](https://www.jkobject.com/blog/umap-explanation/) by Author
+| **[Publication]** [UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction](https://www.semanticscholar.org/paper/UMAP%3A-Uniform-Manifold-Approximation-and-Projection-McInnes-Healy/3a288c63576fc385910cb5bc44eaea75b442e62e) by Leland McInnes and John Healy (Computer Science)
 | **[Course]** [Applied Data Mining and Statistical Learning](https://online.stat.psu.edu/stat508/) by Penn State Eberly College of Science
 |
 |
