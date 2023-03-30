@@ -18,6 +18,8 @@ knitr::opts_chunk$set(echo = TRUE, fig.width=15, fig.height=10)
 |
 | This document implements dimensionality reduction algorithms for extracting information using various helpful packages in <mark style="background-color: #CCECFF">**R**</mark>.    
 |
+| Dimensionality reduction is a form of unsupervised learning method aimed at reducing the number of features in a data set while retaining as much information as possible for purposes of lessening the complexity of the model, improving the performance of the learning algorithm or for formulating a more intuitive visualization of the data. The algorithms applied in this study (mostly contained in the <mark style="background-color: #CCECFF">**stats**</mark>, <mark style="background-color: #CCECFF">**fastICA**</mark>, <mark style="background-color: #CCECFF">**NMF**</mark>, <mark style="background-color: #CCECFF">**umap**</mark> and <mark style="background-color: #CCECFF">**Rtsne**</mark> packages) attempt to transform and project the data onto a lower-dimensional space while preserving important information.
+|
 ##  1.1 Sample Data
 |
 | The <mark style="background-color: #EEEEEE;color: #FF0000">**NCI6**</mark>  dataset from the  <mark style="background-color: #CCECFF">**ISLR**</mark> package was used for this illustrated example. Only a subset of observations representing major cancer types was used for the analysis.    
