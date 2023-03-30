@@ -649,6 +649,8 @@ xyplot(V1 ~ V2,
 
 ###  1.5.5 t-Distributed Stochastic Neighbor Embedding (tSNE)
 |
+| [tSNE](https://www.semanticscholar.org/paper/Visualizing-Data-using-t-SNE-Maaten-Hinton/1c46943103bd7b7a2c7be86859995a4144d1938b) identifies patterns in the data based on the similarity of data points with features by creating a probability distribution that captures these mutual distance relationships between the points in the initial high-dimensional space. The algorithm then minimizes the difference between these conditional probabilities (or similarities) in higher-dimensional and lower-dimensional space for a perfect representation of data points in lower-dimensional space. Stochastic gradient descent optimization is applied with a cost function using the Kullback–Leibler divergence — a commonly used measure of how different two data distributions are.
+|
 | **[A]** The tSNE algorithm was implemented only for descriptors using the <mark style="background-color: #CCECFF">**Rtsne**</mark> package.  
 |
 | **[B]** Combining the reduced dimensions defined by the <span style="color: #FF0000">tSNE1</span> and <span style="color: #FF0000">tSNE2</span> components provided a sufficient differential representation of the cancer types. 
