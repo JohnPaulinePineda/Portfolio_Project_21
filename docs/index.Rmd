@@ -491,6 +491,11 @@ xyplot(PC1 ~ PC2,
 
 ###  1.5.2 Singular Value Decomposition (SVD)
 |
+| [SVD](https://link.springer.com/article/10.1007/BF02288367) identifies a set of basis functions that can be used to represent the original data set by searching for a linear transformation that minimizes the statistical dependence between its components. The identified basis functions which are chosen to be statistically independent and non-Gaussian are used to separate original data set into a set of independent components.
+U:  mxn matrix of the orthonormal eigenvectors of AA^{T}                    .
+VT: transpose of a nxn matrix containing the orthonormal eigenvectors of A^{T}A.
+W:  a nxn diagonal matrix of the singular values which are the square roots of the eigenvalues of A^{T}A                
+|
 | **[A]** The SVD algorithm was implemented only for descriptors using the <mark style="background-color: #CCECFF">**stats**</mark> package.  
 |
 | **[B]** Combining the reduced dimensions defined by the <span style="color: #FF0000">SV1</span> and <span style="color: #FF0000">SV2</span> components provided a sufficient differential representation of the cancer types. 
@@ -905,6 +910,7 @@ grid.arrange(PCA_Plot,
 | **[Article]** [Singular Value Decomposition](https://datascience.eu/machine-learning/singular-value-decomposition/) by Data Science Team
 | **[Article]** [Singular Value Decomposition (SVD)](https://www.machinelearningmindset.com/singular-value-decomposition-svd/) by Maachine Learning Mindset Team
 | **[Article]** [Singular Value Decomposition](https://calvinfeng.gitbook.io/machine-learning-notebook/supervised-learning/recommender/singular_value_decomposition) by Calvin Feng
+| **[Article]** [Explained: Singular Value Decomposition (SVD)](https://storrs.io/svd/) by Erik Storrs
 | **[Article]** [ML: Independent Component Analysis](https://www.geeksforgeeks.org/ml-independent-component-analysis/) by Geeks For Geeks Team
 | **[Article]** [A Tutorial on Independent Component Analysis](https://arxiv.org/pdf/1404.2986v1.pdf) by Jonathon Shlens
 | **[Article]** [Introduction to Independent Component Analysis in Machine Learning](https://www.analyticssteps.com/blogs/introduction-independent-component-analysis-machine-learning) by Soumyaa Rawat
