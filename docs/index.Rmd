@@ -491,10 +491,7 @@ xyplot(PC1 ~ PC2,
 
 ###  1.5.2 Singular Value Decomposition (SVD)
 |
-| [SVD](https://link.springer.com/article/10.1007/BF02288367) identifies a set of basis functions that can be used to represent the original data set by searching for a linear transformation that minimizes the statistical dependence between its components. The identified basis functions which are chosen to be statistically independent and non-Gaussian are used to separate original data set into a set of independent components.
-U:  mxn matrix of the orthonormal eigenvectors of AA^{T}                    .
-VT: transpose of a nxn matrix containing the orthonormal eigenvectors of A^{T}A.
-W:  a nxn diagonal matrix of the singular values which are the square roots of the eigenvalues of A^{T}A                
+| [SVD](https://link.springer.com/article/10.1007/BF02288367) factors the original data set (m x n matrix) into three component matrices factorized in the form USV where U, S and V correspond to an m x p matrix, a p x p diagonal matrix and a p x n matrix, respectively. The value p is called the rank. The diagonal entries of S are referred to as the singular values of M. The columns of U are typically called the left-singular vectors of M, and the columns of V are called the right-singular vectors of M. Given the decomposition into the U, S and V matrices, the algorithm is able to reconstruct the original data set or an approximation of it. The singular values in the diagonal matrix S provide the amount of variance explained by each of the singular vectors. This information is used to limit the number of vectors to the reduced amount of variance aimed to be captured. 
 |
 | **[A]** The SVD algorithm was implemented only for descriptors using the <mark style="background-color: #CCECFF">**stats**</mark> package.  
 |
