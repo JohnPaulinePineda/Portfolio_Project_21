@@ -549,14 +549,7 @@ xyplot(V1 ~ V2,
 
 ###  1.5.3 Independent Component Analysis (ICA)
 |
-| [ICA](https://www.sciencedirect.com/science/article/abs/pii/S0893608000000265) decomposes multivariate data by creating a user-defined number of features where each feature is a linear combination of the original attribute set with the coefficients of these linear combinations being non-negative. The algorithm obtains lower rank factorized matrices W (feature matrix) and H (coefficient matrix) whose product approximates the original data set through an iterative procedure which modifies their initial values. The procedure terminates when the approximation error converges or the specified number of iterations is reached. The result represents the original data set mapped into the new set of attributes (features).
-
-Independent Component Analysis (ICA) is a statistical and computational technique used in machine learning to separate a multivariate signal into its independent non-Gaussian components. ICA assumes that the observed data is a linear combination of independent, non-Gaussian signals. The goal of ICA is to find a linear transformation of the data that results in a set of independent components.
-
-identifies a set of basis functions that can be used to represent the observed data set. These basis functions are chosen to be statistically independent and non-Gaussian. Once these basis functions are identified, they can be used to separate the observed data into its independent components.
-
-
-Despite these limitations, ICA remains a powerful and widely used technique in machine learning and signal processing
+| [ICA](https://www.sciencedirect.com/science/article/abs/pii/0165168494900299) identifies a set of basis functions that can be used to represent the original data set by searching for a linear transformation that minimizes the statistical dependence between its components. The identified basis functions which are chosen to be statistically independent and non-Gaussian are used to separate original data set into a set of independent components.
 |
 | **[A]** The ICA algorithm was implemented only for descriptors using the <mark style="background-color: #CCECFF">**fastICA**</mark> package.  
 |
