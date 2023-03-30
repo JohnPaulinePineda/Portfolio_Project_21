@@ -911,7 +911,7 @@ grid.arrange(PCA_Plot,
 | **[Article]** [Understanding UMAP](https://pair-code.github.io/understanding-umap/) by Andy Coenen and Adam Pearce
 | **[Article]** [UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction](https://www.jkobject.com/blog/umap-explanation/) by Jeremie Kalfon
 | **[Publication]** [Analysis of a Complex of Statistical Variables into Principal Components](https://psycnet.apa.org/doiLanding?doi=10.1037%2Fh0071325) by Harold Hotelling (Journal of Educational Psychology)
-| **[Publication]** [Title](https://www.jkobject.com/blog/umap-explanation/) by Author
+| **[Publication]** [The Approximation of One Matrix by Another of Lower Rank](https://link.springer.com/article/10.1007/BF02288367) by Carl Eckart and Gale Young 
 | **[Publication]** [Title](https://www.jkobject.com/blog/umap-explanation/) by Author
 | **[Publication]** [Title](https://www.jkobject.com/blog/umap-explanation/) by Author
 | **[Publication]** [Title](https://www.jkobject.com/blog/umap-explanation/) by Author
