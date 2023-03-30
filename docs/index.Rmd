@@ -911,6 +911,7 @@ grid.arrange(PCA_Plot,
 | **[Article]** [Singular Value Decomposition (SVD)](https://www.machinelearningmindset.com/singular-value-decomposition-svd/) by Maachine Learning Mindset Team
 | **[Article]** [Singular Value Decomposition](https://calvinfeng.gitbook.io/machine-learning-notebook/supervised-learning/recommender/singular_value_decomposition) by Calvin Feng
 | **[Article]** [Explained: Singular Value Decomposition (SVD)](https://storrs.io/svd/) by Erik Storrs
+| **[Article]** [Using SVD for Dimensionality Reduction](https://blogs.oracle.com/machinelearning/post/using-svd-for-dimensionality-reduction) by Mark Hornick
 | **[Article]** [ML: Independent Component Analysis](https://www.geeksforgeeks.org/ml-independent-component-analysis/) by Geeks For Geeks Team
 | **[Article]** [A Tutorial on Independent Component Analysis](https://arxiv.org/pdf/1404.2986v1.pdf) by Jonathon Shlens
 | **[Article]** [Introduction to Independent Component Analysis in Machine Learning](https://www.analyticssteps.com/blogs/introduction-independent-component-analysis-machine-learning) by Soumyaa Rawat
