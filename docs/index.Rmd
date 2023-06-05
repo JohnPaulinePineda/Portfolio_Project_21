@@ -16,7 +16,7 @@ knitr::opts_chunk$set(echo = TRUE, fig.width=15, fig.height=10)
 ```
 # **1. Table of Contents**
 |
-| This document implements dimensionality reduction algorithms for extracting information using various helpful packages in <mark style="background-color: #CCECFF">**R**</mark>.    
+| This project explores different dimensionality reduction algorithms for extracting information using various helpful packages in <mark style="background-color: #CCECFF">**R**</mark>. Methods applied in the analysis to transform and reduce high dimensional data included the **Principal Component Analysis**, **Singular Value Decomposition**, **Independent Component Analysis**, **Non-Negative Matrix Factorization**, **t-Distributed Stochastic Neighbor Embedding** and **Uniform Manifold Approximation and Projection** algorithms. The various algorithms were subjectively evaluated based on their capability to effectively capture the latent characteristics between the different resulting components.
 |
 | Dimensionality reduction is a form of unsupervised learning method aimed at reducing the number of features in a data set while retaining as much information as possible for purposes of lessening the complexity of the model, improving the performance of the learning algorithm or for formulating a more intuitive visualization of the data. The algorithms applied in this study (mostly contained in the <mark style="background-color: #CCECFF">**stats**</mark>, <mark style="background-color: #CCECFF">**fastICA**</mark>, <mark style="background-color: #CCECFF">**NMF**</mark>, <mark style="background-color: #CCECFF">**umap**</mark> and <mark style="background-color: #CCECFF">**Rtsne**</mark> packages) attempt to transform and project the data onto a lower-dimensional space while preserving important information.
 |
@@ -756,12 +756,12 @@ xyplot(V1 ~ V2,
 | Algorithm performance comparison:
 |
 | **[A]** The dimensionality reduction algorithms applied only to the descriptors were able to effectively capture the latent characteristics of the cancer types. 
-|      **[A.1]** PCA: Principal Component Analysis (<mark style="background-color: #CCECFF">**stats**</mark> package)
-|      **[A.2]** SVD: Singular Value Decomposition (<mark style="background-color: #CCECFF">**stats**</mark> package)
-|      **[A.3]** ICA: Independent Component Analysis (<mark style="background-color: #CCECFF">**fastICA**</mark> package)
-|      **[A.4]** NMF: Non-Negative Matrix Factorization (<mark style="background-color: #CCECFF">**NMF**</mark> package)
-|      **[A.5]** tSNE: t-Distributed Stochastic Neighbor Embedding (<mark style="background-color: #CCECFF">**Rtsne**</mark> package)
-|      **[A.6]** UMAP: Uniform Manifold Approximation and Projection (<mark style="background-color: #CCECFF">**umap**</mark> package)
+|      **[A.1]** **PCA: Principal Component Analysis** (<mark style="background-color: #CCECFF">**stats**</mark> package)
+|      **[A.2]** **SVD: Singular Value Decomposition** (<mark style="background-color: #CCECFF">**stats**</mark> package)
+|      **[A.3]** **ICA: Independent Component Analysis** (<mark style="background-color: #CCECFF">**fastICA**</mark> package)
+|      **[A.4]** **NMF: Non-Negative Matrix Factorization** (<mark style="background-color: #CCECFF">**NMF**</mark> package)
+|      **[A.5]** **tSNE: t-Distributed Stochastic Neighbor Embedding** (<mark style="background-color: #CCECFF">**Rtsne**</mark> package)
+|      **[A.6]** **UMAP: Uniform Manifold Approximation and Projection** (<mark style="background-color: #CCECFF">**umap**</mark> package)
 |
 ```{r section_1.6, warning=FALSE, message=FALSE}
 ##################################
