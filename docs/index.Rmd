@@ -38,6 +38,9 @@ knitr::opts_chunk$set(echo = TRUE, fig.width=15, fig.height=10)
 |      **[B.2]** 6830/6831 descriptors = 6830/6830 numeric
 |     
 | 
+
+<details><summary><mark style="background-color: #000000;color: #FFFFFF">**Code Chunk | Output**</mark></summary>
+
 ```{r section_1.1, warning=FALSE, message=FALSE}
 ##################################
 # Loading R libraries
@@ -111,6 +114,9 @@ PDA <- NCI60
   row.names=NULL)
 )
 ```
+
+</details>
+
 ##  1.2 Data Quality Assessment
 |
 | Data quality assessment:
@@ -125,6 +131,10 @@ PDA <- NCI60
 | 
 | **[E]** Considering the unsupervised learning nature of the analysis, no data pre-processing was proceeded to address the data quality issues identified.
 |
+|
+
+<details><summary><mark style="background-color: #000000;color: #FFFFFF">**Code Chunk | Output**</mark></summary>
+
 ```{r section_1.2, warning=FALSE, message=FALSE}
 ##################################
 # Loading dataset
@@ -342,6 +352,8 @@ if (length(names(DQA.Descriptors.Numeric))==0) {
 
 ```
 
+</details>
+
 ##  1.3 Data Preprocessing
 
 ###  1.3.1 Centering and Scaling
@@ -350,6 +362,10 @@ if (length(names(DQA.Descriptors.Numeric))==0) {
 |
 | **[A]** To maintain an objective comparison across the different descriptors, centering and scaling transformation was applied on the numeric variables. The <span style="color: #0000FF">center</span> method from the <mark style="background-color: #CCECFF">**caret**</mark> package was implemented which subtracts the average value of a numeric variable to all the values. As a result of centering, the variables had zero mean values. In addition, the <span style="color: #0000FF">scale</span> method, also from the <mark style="background-color: #CCECFF">**caret**</mark> package, was applied which performs a center transformation with each value of the variable divided by its standard deviation. Scaling the data coerced the values to have a common standard deviation of one.
 |
+|
+
+<details><summary><mark style="background-color: #000000;color: #FFFFFF">**Code Chunk | Output**</mark></summary>
+
 ```{r section_1.3.1, warning=FALSE, message=FALSE}
 ##################################
 # Loading dataset
@@ -375,12 +391,18 @@ row.names(DPA.Descriptors.Numeric_CenteredScaledTransformed) <- NULL
 
 ```
 
+</details>
+
 ## 1.4 Data Exploration
 |
 | Exploratory data analysis:
 |
 | **[A]** Most descriptors demonstrated differential relationships across the different levels of the <span style="color: #FF0000">Cancer</span> variable. Although, as driven by the huge number, the best descriptors cannot be clearly established. 
 |
+|
+
+<details><summary><mark style="background-color: #000000;color: #FFFFFF">**Code Chunk | Output**</mark></summary>
+
 ```{r section_1.4, warning=FALSE, message=FALSE}
 ##################################
 # Loading dataset
@@ -429,6 +451,8 @@ featurePlotRange(1+28*243,6830)
 
 ```
 
+</details>
+
 ## 1.5 Dimensionality Reduction
 
 ###  1.5.1 Principal Component Analysis (PCA)
@@ -439,6 +463,10 @@ featurePlotRange(1+28*243,6830)
 |
 | **[B]** Combining the reduced dimensions defined by the <span style="color: #FF0000">PC1</span> and <span style="color: #FF0000">PC2</span> components provided a sufficient differential representation of the cancer types. 
 |
+|
+
+<details><summary><mark style="background-color: #000000;color: #FFFFFF">**Code Chunk | Output**</mark></summary>
+
 ```{r section_1.5.1, warning=FALSE, message=FALSE}
 ##################################
 # Loading dataset
@@ -491,6 +519,8 @@ xyplot(PC1 ~ PC2,
 
 ```
 
+</details>
+
 ###  1.5.2 Singular Value Decomposition (SVD)
 |
 | [Singular Value Decomposition](https://link.springer.com/article/10.1007/BF02288367) decomposes the original data set (m x n matrix) into three component matrices factorized in the form USV where U, S and V correspond to an m x p matrix, a p x p diagonal matrix and a p x n matrix, respectively. The value p is called the rank. The diagonal entries of S are referred to as the singular values of M. The columns of U are typically called the left-singular vectors of M, and the columns of V are called the right-singular vectors of M. Given the decomposition into the U, S and V matrices, the algorithm is able to reconstruct the original data set or an approximation of it. The singular values in the diagonal matrix S provide the amount of variance explained by each of the singular vectors. This information is used to limit the number of vectors to the reduced amount of variance aimed to be captured. 
@@ -499,6 +529,10 @@ xyplot(PC1 ~ PC2,
 |
 | **[B]** Combining the reduced dimensions defined by the <span style="color: #FF0000">SV1</span> and <span style="color: #FF0000">SV2</span> components provided a sufficient differential representation of the cancer types. 
 |
+|
+
+<details><summary><mark style="background-color: #000000;color: #FFFFFF">**Code Chunk | Output**</mark></summary>
+
 ```{r section_1.5.2, warning=FALSE, message=FALSE}
 ##################################
 # Loading dataset
@@ -551,6 +585,8 @@ xyplot(V1 ~ V2,
 
 ```
 
+</details>
+
 ###  1.5.3 Independent Component Analysis (ICA)
 |
 | [Independent Component Analysis](https://www.sciencedirect.com/science/article/abs/pii/0165168494900299) identifies a set of basis functions that can be used to represent the original data set by searching for a linear transformation that minimizes the statistical dependence between its components. The identified basis functions which are chosen to be statistically independent and non-Gaussian are used to separate the original data into a set of independent components.
@@ -559,6 +595,10 @@ xyplot(V1 ~ V2,
 |
 | **[B]** Combining the reduced dimensions defined by the <span style="color: #FF0000">IC1</span> and <span style="color: #FF0000">IC2</span> components provided a sufficient differential representation of the cancer types. 
 |
+|
+
+<details><summary><mark style="background-color: #000000;color: #FFFFFF">**Code Chunk | Output**</mark></summary>
+
 ```{r section_1.5.3, warning=FALSE, message=FALSE}
 ##################################
 # Loading dataset
@@ -598,6 +638,8 @@ xyplot(V1 ~ V2,
 
 ```
 
+</details>
+
 ###  1.5.4 Non-Negative Matrix Factorization (NMF)
 |
 | [Non-Negative Matrix Factorization](https://projecteuclid.org/journals/pacific-journal-of-mathematics/volume-1/issue-2/On-the-approximation-of-a-function-of-several-variables-by/pjm/1103052191.full) decomposes the original data set (m x n matrix) by creating a user-defined number of features where each feature is a linear combination of the original attribute set with the coefficients of these linear combinations being non-negative. The algorithm obtains lower rank factorized matrices W (m x k feature matrix) and H (k x n coefficient matrix) whose product approximates the original data set through an iterative procedure which modifies their initial values. The values of k represent the low rank approximation of the original data set. The procedure terminates when the approximation error converges or the specified number of iterations is reached. The result represents the original data set mapped into the new set of attributes (features).
@@ -606,6 +648,10 @@ xyplot(V1 ~ V2,
 |
 | **[B]** Combining the reduced dimensions defined by the <span style="color: #FF0000">NMF1</span> and <span style="color: #FF0000">NMF2</span> components provided a sufficient differential representation of the cancer types. 
 |
+|
+
+<details><summary><mark style="background-color: #000000;color: #FFFFFF">**Code Chunk | Output**</mark></summary>
+
 ```{r section_1.5.4, warning=FALSE, message=FALSE}
 ##################################
 # Loading dataset
@@ -655,6 +701,8 @@ xyplot(V1 ~ V2,
        main = "NMF")
 ```
 
+</details>
+
 ###  1.5.5 t-Distributed Stochastic Neighbor Embedding (tSNE)
 |
 | [t-Distributed Stochastic Neighbor Embedding](https://www.semanticscholar.org/paper/Visualizing-Data-using-t-SNE-Maaten-Hinton/1c46943103bd7b7a2c7be86859995a4144d1938b) identifies patterns in the data based on the similarity of data points with features by creating a probability distribution that captures these mutual distance relationships between the points in the initial high-dimensional space. The algorithm then minimizes the difference between these conditional probabilities (or similarities) in higher-dimensional and lower-dimensional space for a perfect representation of data points in lower-dimensional space. Stochastic gradient descent optimization is applied with a cost function using the Kullback–Leibler divergence — a commonly used measure of how different two data distributions are.
@@ -663,6 +711,10 @@ xyplot(V1 ~ V2,
 |
 | **[B]** Combining the reduced dimensions defined by the <span style="color: #FF0000">tSNE1</span> and <span style="color: #FF0000">tSNE2</span> components provided a sufficient differential representation of the cancer types. 
 |
+|
+
+<details><summary><mark style="background-color: #000000;color: #FFFFFF">**Code Chunk | Output**</mark></summary>
+
 ```{r section_1.5.5, warning=FALSE, message=FALSE}
 ##################################
 # Loading dataset
@@ -703,6 +755,8 @@ xyplot(V1 ~ V2,
 
 ```
 
+</details>
+
 ###  1.5.6 Uniform Manifold Approximation and Projection (UMAP)
 |
 | [Uniform Manifold Approximation and Projection](https://www.semanticscholar.org/paper/UMAP%3A-Uniform-Manifold-Approximation-and-Projection-McInnes-Healy/3a288c63576fc385910cb5bc44eaea75b442e62e) constructs a fuzzy topological representation and optimizes the low dimensional representation as measured by cross entropy. When constructing the initial fuzzy topological representation, fuzzy set membership strengths are only computed for the nearest neighbors of each point using the Nearest-Neighbor-Descent algorithm for efficiency. Optimizing the low dimensional embedding applies the stochastic gradient descent process using a differentiable objective function involving a smooth approximation of the actual membership strength function for the low dimensional representation, selecting from a suitably versatile family. Since the Laplacian of the topological representation is an approximation of the Laplace-Beltrami operator of the manifold, spectral embedding techniques are also used to initialize the low dimensional representation into a good state.
@@ -711,6 +765,10 @@ xyplot(V1 ~ V2,
 |
 | **[B]** Combining the reduced dimensions defined by the <span style="color: #FF0000">UMAP1</span> and <span style="color: #FF0000">UMAP2</span> components provided a sufficient differential representation of the cancer types. 
 |
+|
+
+<details><summary><mark style="background-color: #000000;color: #FFFFFF">**Code Chunk | Output**</mark></summary>
+
 ```{r section_1.5.6, warning=FALSE, message=FALSE}
 ##################################
 # Loading dataset
@@ -751,6 +809,8 @@ xyplot(V1 ~ V2,
 
 ```
 
+</details>
+
 ##  1.6 Algorithm Comparison Summary
 |
 | Algorithm performance comparison:
@@ -763,6 +823,10 @@ xyplot(V1 ~ V2,
 |      **[A.5]** **tSNE: t-Distributed Stochastic Neighbor Embedding** (<mark style="background-color: #CCECFF">**Rtsne**</mark> package)
 |      **[A.6]** **UMAP: Uniform Manifold Approximation and Projection** (<mark style="background-color: #CCECFF">**umap**</mark> package)
 |
+|
+
+<details><summary><mark style="background-color: #000000;color: #FFFFFF">**Code Chunk | Output**</mark></summary>
+
 ```{r section_1.6, warning=FALSE, message=FALSE}
 ##################################
 # Re-plotting the best PCA components
@@ -860,6 +924,8 @@ grid.arrange(PCA_Plot,
              ncol = 3)
 
 ```
+
+</details>
 
 # **2. References**
 |
