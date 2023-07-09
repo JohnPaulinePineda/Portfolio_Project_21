@@ -1,5 +1,5 @@
 ---
-title: 'R : Extracting Information Using Dimensionality Reduction Algorithms'
+title: 'Unsupervised Learning : Extracting Information Using Dimensionality Reduction Algorithms'
 author: "John Pauline Pineda"
 date: "December 28, 2022"
 output: 
