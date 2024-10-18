@@ -4,4 +4,4 @@
 
 This [project](https://johnpaulinepineda.github.io/Portfolio_Project_21/) explores the various dimensionality reduction algorithms for extracting information. Methods applied in the analysis to transform and reduce high dimensional data included the Principal Component Analysis, Singular Value Decomposition, Independent Component Analysis, Non-Negative Matrix Factorization, t-Distributed Stochastic Neighbor Embedding and Uniform Manifold Approximation and Projection algorithms. The different dimensionality reduction algorithms were subjectively evaluated based on their capability to effectively capture the latent characteristics between the different resulting components.
 
-<img src="docs/Project21_Summary.png?raw=true"/>
+<img src="images/Project21_Summary.png?raw=true"/>
